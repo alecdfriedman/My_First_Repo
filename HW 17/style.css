@@ -16,8 +16,10 @@ body {
 img {
     max-width: 100%;
 }
-h4 {
+h2 {
+    margin-top: 2em;
     font-weight: 500;
+    font-size: 1em;
     color: #eee;
     text-transform: uppercase;
 }
@@ -35,6 +37,7 @@ main {
     text-align: center;
     color: #eee;
     text-transform: uppercase;
+    margin-bottom: -0.5em;
 }
 .bodyText {
     padding-left: 35%;
@@ -42,4 +45,7 @@ main {
     padding-top: 5%;
     font-size: 1.1em;
     line-height: 1.4;
+}
+p {
+    margin-bottom: 1.4em;
 }
