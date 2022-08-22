@@ -33,7 +33,7 @@ img {
     list-style-type: none;
     line-height: 1.8;
 }
-.project-title:hover {
+.project-title:hover, .page-title:hover{
     color: #eeeeee;
     cursor: pointer;
     transition: 0.2s ease;
@@ -46,6 +46,10 @@ a {
     text-decoration: inherit;
 }
 /* Sidebar ends, main content begins */
+.page-container {
+    padding-left: 1%;
+    padding-right: 1%;
+}
 main {
     margin-left: 28%;
     padding-bottom: 60px;
@@ -86,4 +90,17 @@ footer {
     font-size: 0.9em;
     margin-top: 60px;
     margin-bottom: 60px;
+}
+.row {
+    background-color: black;
+    height: min-content;
+    text-align: center;
+}
+.col-md-4 {
+    width: 33%;
+    background-color: white;
+    padding-bottom: 33%;
+    background-size: cover;
+    background-position: center;
+    max-width: 300px;
 }
