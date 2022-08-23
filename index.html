@@ -7,26 +7,45 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/AFD-light.png">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400;1,500&display=swap" rel="stylesheet">
     <title>Alec Friedman Design</title>
 </head>
-<body>
+<body onload="welcomeMessage()">
+    <!--<script>
+        function welcomeMessage() {
+            alert("Hello! Thanks for vieing my website!");
+        }
+    </script>-->
     <div class="site-container">
         <aside class="sidebar">
-            <img src="Images/AFDesign-Light.png" alt="Alec Friedman Design">
-            <h2>
-                Category
-            </h2>
-            <ul>
-                <li>Page</li>
-                <li>Page</li>
+            <a href="index.html">
+                <img src="Images/AFDesign-Light.png" alt="Alec Friedman Design">
+            </a>
+            <ul class="group">
+                <li class="collection-title">
+                <a href="bootcampWork.html">UMN UX/UI Bootcamp</a>
+                </li>
+                <li class="project-title">Roamer - Travel App</li>
+                <li class="project-title">GYST - Productivity App Group Project</li>
+                <li class="project-title">National Park Service - Redesign</li>
+                <li class="project-title">Animal Humane Society - Group Redesign</li>
+                <li class="project-title">Animal Rights Coalition - Final Group Project</li>
             </ul>
-            <h2>
-                Category
-            </h2>
-            <ul>
-                <li>Page</li>
-                <li>Page</li>
+            <ul class="group">
+                <li class="collection-title">Professional Design Work</li>
+            </ul>
+            <ul class="group">
+                <li class="collection-title">Personal Design Work</li>
+            </ul>
+            <ul class="group">
+                <li class="collection-title">
+                    <a href="https://www.afriedmanphoto.com">Photography (external link)</a>
+                </li>
+            </ul>
+            <ul class="group">
+                <li id="active-page" class="page-title">About Me</li>
+                <li class="page-title">Contact</li>
             </ul>
         </aside>
         <main class="page-container">
@@ -41,6 +60,13 @@
                     Cras tincidunt interdum quam, eget dignissim augue aliquam eget. Fusce nec orci ligula. Morbi hendrerit enim vel justo pharetra placerat. Suspendisse feugiat, augue nec consequat vestibulum, dolor nisl tristique augue, nec fringilla dolor ligula vel erat. Phasellus ac lorem mauris. Sed tempus enim nec lectus tempus hendrerit. Phasellus quis interdum arcu, vitae placerat enim. Sed dapibus posuere leo, id congue elit volutpat sed. Nulla id lacinia eros, at scelerisque lorem. Cras volutpat venenatis porttitor. Proin ut nisi nulla. Vivamus imperdiet quam vel molestie bibendum. Mauris lacinia est orci, aliquet vulputate erat aliquam sit amet. Curabitur euismod lectus ut leo interdum tempor.
                 </p>
             </div>
+            <div class="backToTopBox">
+                <a href="#top" class="backToTop">↑ Back To Top</a>
+            </div>
+            <footer>
+                Contact me at <i>alec@alecdfriedman.com</i><br>
+                Currently located in Minneapolis, MN
+            </footer>
         </main>
     </div>
 </body>
