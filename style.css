@@ -91,16 +91,134 @@ footer {
     margin-top: 60px;
     margin-bottom: 60px;
 }
+/* Main content ends, Bootstrap begins */
 .row {
-    background-color: black;
-    height: min-content;
+    /*background-color: black;*/
     text-align: center;
+    padding: 0;
 }
-.col-md-4 {
-    width: 33%;
-    background-color: white;
-    padding-bottom: 33%;
+.col-lg-4, .col-md-6, .col-12 {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.project-card {
+    width: 100%;
+    height: 338px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+#roamer {
+    background: url("images/Roamer.png");
+    background-color: #262626;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    background-position: center;
-    max-width: 300px;
 }
+#gyst {
+    background: url("images/GystBranding.png");
+    background-color: #262626;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#nps {
+    background: url("images/npsBranding.png");
+    background-color: #262626;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#ahs {
+    background: url("images/ahsBranding.png");
+    background-color: #262626;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#arc {
+    background: url("images/arcBranding.png");
+    background-color: #262626;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s ease;
+    background-color: rgba(34,34,34,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 20px;
+  }
+  .project-card:hover .card-overlay {
+    opacity: 1;
+  }
+  .card-date {
+    /* Date */
+    width: 100%;
+    height: fit-content;
+    font-family: 'Fira Sans';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    /* identical to box height, or 125% */
+    text-align: center;
+    color: #BFBFBF;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .card-title {
+    /* Title */
+    width: 100%;
+    height: fit-content;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 172%;
+    /* identical to box height, or 172% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #EEEEEE;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .card-caption {
+    /* Caption */
+    width: 100%;
+    height: fit-content;
+    font-family: 'Fira Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 106%;
+    /* or 106% */
+    text-align: center;
+    color: #BFBFBF;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+  }
